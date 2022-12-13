@@ -1,0 +1,39 @@
+body {
+    background-color: #111111;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.025rem;
+}
+
+#interval {
+    display: none;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 16rem;
+    padding: 2rem 1rem;
+;
+  }
+
+  #content {
+    margin-left: 18rem;
+    margin-right: 2rem;
+    padding: 2rem 1rem;
+  }
+  
+  @media screen and (max-width: 700px) {
+    #sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    #content {margin-left: 0;}
+  }

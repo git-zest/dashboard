@@ -10,7 +10,7 @@ class App:
     def __init__(self):
         styles = [dbc.themes.BOOTSTRAP]
         self.layout = AppLayout()
-        self.data = SimData("./AMZN.csv")  # here we initionlize Data class object
+        self.data = SimData("./sample.csv")  # here we initionlize Data class object
         self.app = Dash(name = __name__, external_stylesheets=styles)
         self.app.layout = self.layout.getAppLayout()
         AppCallback(self.app, self.data)
